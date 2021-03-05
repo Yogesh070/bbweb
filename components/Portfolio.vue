@@ -1,85 +1,96 @@
 <template>
-    <div class="top">
+<div class="container" id="portfolio">
+    <div class="content">
         <h2>Our Portfolio</h2>
         <p>Voice and Data Systems are crucial to the success or <br/>failure of most your businesses.</p>
-        <div id="app">
-            <ul class="navigator">
-                <li @click="prevSlide" class="lightgrey"> &laquo; </li>
-                <li @click="nextSlide" class="lightgrey"> &raquo; </li>
-            </ul>
-  <div class="slider-container">
-    <ul class="slider" :style="styleObject">
-      <li class="green slide">Slide 1</li>
-      <li class="blue slide">Slide 2</li>
-      <li class="grey slide">Slide 3</li>
-      <li class="red slide">Slide 4</li>
-    </ul>
-  </div>
-        </div>
     </div>
+    <div class="slider-container" id="slider">
+        <div class="slider green" style="order:0" >1</div>
+        <div class="slider blue" style="order:1">2</div>
+        <div class="slider grey" style="order:2">3</div>
+
+    </div>
+    <div class="button-group">
+        <button @click="shift(-1)" class="prev-button">&laquo;</button>
+        <button @click="shift(1)" class="next-button">&raquo;</button>
+    </div>
+</div>
+
 </template>
 
 <script>
     export default {
-        data() {
-            return {
-                activeSlide: 1,
-            }
+        methods: {
+            shift(direction) {
+                const slider = document.getElementById("slider");
+                slider.children.forEach(function(sliderItem){
+                const lastOrder = parseInt(sliderItem.style.order) ;
+                const newOrder = (3 + direction + lastOrder) % 3 ;
+                sliderItem.style.order = newOrder
+                 + "" ;
+        })
+            },
         },
-        computed: {
-    styleObject: function() {
-      const width = 0 - ((this.activeSlide-1) * 700)
-      return {
-        transform: 'translateX('+width+'px)'
-      }
     }
-  },
-  methods: { 
-    nextSlide: function() { 
-      if(this.activeSlide < 4) this.activeSlide++
-    },
-    prevSlide: function() {
-      if(this.activeSlide > 1) this.activeSlide--
-    }
-    }
-}
 </script>
 
 <style lang="scss" scoped>
-.top{
+.container{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 4vw 7vw;
+    text-align: center;
+}
+.content{
+    margin: 30px 0;
+}
+.slider-container{
+    display: flex;
+        // transition: 2s;
     justify-content: center;
-    text-align:center;
-    height: 80vh;
+    flex-wrap: wrap;
 }
-.slider-container { 
-//   overflow: hidden;
-  width: 100px;
-  height: 200px; 
-//   position: absolute; top: 50%; left: 50%; 
-//   transform: translate(-50%, -50%) 
+.slider{
+        // height: 50px;
+        // width: 240px;
+        width: 22vw;
+        margin: 20px;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+         height: 200px; 
+         height: 16vw;
+        // transition: 2s;
 }
-.slider { width: 100vw; height: 200px; overflow: hidden; transition: all .32s ease; }
-.slide { float: left; width: 700px; height: 200px; font-size: 40px; color: #eee; padding-top: 70px; }
 .green { background: #1abc9c; }
 .blue { background: #3498db; }
 .grey { background: #34495e; }
-.red { background: #e74c3c; }
-.lightgrey { background: #95a5a6; }
 
-.navigator { text-align: center; display: inline-block; margin: 15px auto; overflow: hidden; padding-bottom: 10px; }
-.navigator li { 
-  float: left;
-  color: #ecf0f1; 
-  border-radius: 50%; 
-  padding: 7px 11px; 
-  margin: 0 10px; cursor: pointer;
-  box-shadow: 0 3px 17px rgba(0,0,0,.3);
-  transition: all .32s ease;
-  position: relative;
-  &:hover {
-    transform: translateY(-2px);
-  }
+.button-group{ 
+    button{
+        width: 40px;
+        font-size: 20px;
+        color: white;
+        border: none;
+        padding: 10px;
+        outline: none;
+        cursor: pointer;
+    }
+}
+.prev-button{
+    background: $nav-color;
+}
+.next-button{
+    background: $base-color;
+}
+@media (max-width: 660px){
+    .slider{
+        margin: 0;
+        height: 85px;
+        width: 80vw;
+    }
+
 }
 </style>
