@@ -66,4 +66,9 @@ export default {
     width: 20px;
   }
 }
+@media (max-width:660px){
+  .header{
+    display: none;
+  }
+}
 </style>

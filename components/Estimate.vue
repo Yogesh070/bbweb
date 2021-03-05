@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-      <div class="estimate-container">
+      <div class="estimate-container" data-aos="zoom-in" data-aos-duration="2000">
           <h1>
               Estimate Your Project <br/> & Say Hi Here.
           </h1>

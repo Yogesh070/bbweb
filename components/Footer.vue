@@ -1,5 +1,5 @@
 <template>
-<div class="container">
+<div class="container" id="contact">
       <div class="top-bar">
         
             <img src="/svg/Brand Builder (White).svg" alt="logo" srcset="" id="logo">
@@ -106,7 +106,8 @@ a{
     align-items: center;
     border-bottom:1px solid white;
     padding: 10px 0;
-    margin: 0 100px;
+    margin: 0 7vw;
+    /* margin: 0 100px; */
 }
 .socials ul{ 
     display: flex;
@@ -122,21 +123,36 @@ a{
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
     justify-items: center;
-    margin: 50px 0;
+    /* margin: 50px 0; */
+    margin: 4vw 7vw;
+    grid-gap:20px;
 }
 li{
     padding: 10px 0;
 }
 .copyright{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px 0;
-    margin: 0 100px;
+    /* margin: 0 100px; */
+    margin: 0 7vw;
 }
 .privacy{
     display: flex;
+    flex-wrap: wrap;
 }z
 .privacy p{
    padding: 0 10px;
+}
+@media (max-width:540px)  { 
+    .bottom-box{
+        grid-template-columns: 1fr;
+        display: block;
+        text-align: center;
+    }
+    .copyright{
+        justify-content: center;
+    }
 }
 </style>

@@ -24,6 +24,7 @@ export default {
     grid-template-columns: 2fr 1fr;
     padding: 50px;
     background-color: #F7FAFF;
+    margin-top: 50px;
 }
 .container p{
     padding: 15px 0;

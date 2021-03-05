@@ -40,6 +40,7 @@ components:{
 .progress-bar{
     padding: 70px 0 0 0;
     position: relative;
+    top: 55px;
 }
 .line{
     position: absolute;
@@ -111,5 +112,25 @@ button:focus{
 img{
     height: 20px;
     width: 25px;
+}
+@media (max-width:660px){
+    .progress-bar{
+        top: 35px;
+        padding: 0;
+    }
+    .line{
+        display: none;
+    }
+    .tab-button{
+        min-height: 57px;
+        padding: 15px;
+    }
+    .button-group{
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        grid-row-gap: 15px;
+    }
 }
 </style>

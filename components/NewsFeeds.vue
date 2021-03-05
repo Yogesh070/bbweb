@@ -1,9 +1,11 @@
 <template>
-<div class="container">
+<div class="container" id="blog">
     <h2>News Feeds</h2>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, iusto!</p>
      <div class="parent">
-        <div class="card" v-for="(item,index) in news" :key="index" >
+        <div class="card" v-for="(item,index) in news" :key="index" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1000">
             <div>
                 <img :src="item.thumbnail" :alt="item.title" srcset="">
             </div>
@@ -60,12 +62,14 @@ data() {
 .parent{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin: 50px 0;
 }
 .card{
     /* padding: 10px 30px; */
     min-height: 300px;
-    max-width: 230px;
+    min-width: 230px;
+    padding: 20px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 1px 18px rgba(0,0,0,.11);
@@ -84,6 +88,9 @@ data() {
         margin-top: 18px;
     }
     
+}
+.card:hover{
+    transform: scale(1.1);
 }
 .author{
     display: flex;

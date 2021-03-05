@@ -5,7 +5,9 @@
       </div>
       <div class="navitems">
         <ul>
-            <li v-for="nav in navs" :key="nav.name" v-link="{path : 'your-link', activeClass: 'active', exact: true}" v-bind:class="{active:currentNav===nav}" v-on:click="currentNav = nav"><nuxt-link :to="`/${nav.link}`">{{nav.name}}</nuxt-link></li>
+            <li v-for="nav in navs" :key="nav.name" v-bind:class="{active:currentNav===nav.name}" v-on:click="currentNav = nav.name"><nuxt-link :to="`/${nav.link}`">{{nav.name}}</nuxt-link></li>
+                        <div class="activebar">
+            </div>
         </ul>
       </div>
   </div>
@@ -53,27 +55,36 @@ computed: {
 </script>
 
 <style lang="scss" scoped>
-.nuxt-link-active{
+
+.active{
+    // border-top: 5px solid $secondary-color;
+    position: relative;
+
+}
+.activebar{
     border-top: 5px solid $secondary-color;
+    height: 5px;
+    width: 10px;
+    position: absolute;
 }
 a{
     text-decoration: none;
     color: $nav-color;
     padding-top: 33px;
 }
-/* .logo{
-    background-color: white;
-    padding: 31px 27px 52px;
-    border-radius: 0 0 76px 76px;
+.logo{
+    margin-right: 30px;
 }
-.logo img{
-    max-height: 86px;
-    width: auto;
-} */
+// .logo img{
+//     max-height: 86px;
+//     width: auto;
+// } 
 .navbar{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    margin: 0 7vw;
 }
 ul li{
     font-size: 18px;
