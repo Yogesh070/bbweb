@@ -22,7 +22,8 @@ export default {
 .container{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    padding: 4vw 7vw;
+    /* padding: 4vw 7vw; */
+    padding: 8vw 7vw 7vw;
     background-color: #F7FAFF;
     margin-top: 50px;
 }
