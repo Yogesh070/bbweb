@@ -16,6 +16,10 @@
         </li>
         </ul>
       </div>
+      <div class="call-card">
+        <span>Get a Call</span>
+        <h5>9802821038</h5>
+      </div>
   </div>
 </template>
 
@@ -48,11 +52,27 @@ export default {
 
 <style lang="scss"scoped>
 .header{
-    padding: 15px 0;
+    padding: 10px 0;
     border-bottom: 1px solid black;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
+    position: relative;
+}
+.call-card{
+    position: absolute;
+    right: 60px;
+    text-align: center;
+    background: $base-color;
+    color: white;
+    height: 75px;
+    top: 0;
+    width: 200px;
+    h5{
+      font-size: 30px;
+      // padding: 15px;
+      color: white;
+    }
 }
 .socials{ 
   ul{
@@ -68,6 +88,11 @@ export default {
 }
 @media (max-width:660px){
   .header{
+    display: none;
+  }
+}
+@media (max-width:1300px){
+  .call-card{
     display: none;
   }
 }
