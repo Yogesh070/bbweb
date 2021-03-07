@@ -3,9 +3,14 @@
     <div class="progress-bar">
         <div class="line"></div>
         <div class="button-group">
-            <button v-for="(tab,index) in process" :key="index"  v-bind:class="['tab-button', { active: currentTab === tab }]"
+            <!-- <button v-for="(tab,index) in process" :key="index"  v-bind:class="['tab-button', { active: currentTab === tab }]"
         v-on:click="currentTab = tab"><img :src="`/svg/SVG_Organized/Process/${tab}.svg`" :alt="tab" v-bind:class="{activeImg: currentTab === tab}">
-        </button>
+        </button> -->
+        <div class="btn" v-for="(tab,index) in process" :key="index"  v-bind:class="['tab-button', { active: currentTab === tab }]"
+        v-on:click="currentTab = tab">
+            <img :src="`/svg/SVG_Organized/Process/${tab}.svg`" :alt="tab" v-bind:class="{activeImg: currentTab === tab}"> 
+            <p class="btn-text">{{tab}}</p>
+        </div>
         </div>
     </div>
     <div>
@@ -79,6 +84,13 @@ components:{
         transform: rotate(360deg);
     }
 }
+.btn-text{
+    position: absolute;
+    top: 75px;
+    color: $base-color;
+    font-size: 16px;
+
+}
 .tab-button img:hover{
     animation-name: rotateIcon;
     animation-duration: 1.5s;
@@ -131,6 +143,9 @@ img{
         grid-template-columns: 1fr 1fr 1fr;
         justify-items: center;
         grid-row-gap: 15px;
+    }
+    .btn-text{
+        display: none;
     }
 }
 </style>
