@@ -138,6 +138,9 @@ li{
     /* margin: 0 100px; */
     margin: 0 7vw;
 }
+.copyright p{
+    color: white;
+}
 .privacy{
     display: flex;
     flex-wrap: wrap;
