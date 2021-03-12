@@ -30,7 +30,8 @@
             <div class="news-feeds">
                 <h2>News Feeds</h2>
                 <ul>
-                    <li v-for="nav in navs" :key="nav.name"><nuxt-link :to="`/${nav.link}`">{{nav.name}}</nuxt-link></li>
+                    <!-- <li v-for="nav in navs" :key="nav.name"><nuxt-link :to="`/${nav.link}`">{{nav.name}}</nuxt-link></li> -->
+                    <li v-for="nav in navs" :key="nav.name"><a href="">{{nav.name}}</a></li>
                 </ul>
             </div>
       </div>

@@ -5,7 +5,11 @@
       </div>
       <div class="navitems">
         <ul>
-            <li v-for="nav in navs" :key="nav.name" v-bind:class="{active:currentNav===nav.name}" v-on:click="currentNav = nav.name"><nuxt-link :to="`/${nav.link}`">{{nav.name}}</nuxt-link></li>
+            <li v-for="nav in navs" :key="nav.name" v-bind:class="{active:currentNav===nav.name}" v-on:click="currentNav = nav.name">
+                <!-- <nuxt-link :to="`/${nav.link}`">{{nav.name}}</nuxt-link> -->
+                <a :href="`#${nav}`">{{nav}</a>
+                
+                </li>
                         <div class="activebar">
             </div>
         </ul>
