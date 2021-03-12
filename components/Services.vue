@@ -5,22 +5,54 @@
      <div class="parent">
         <div class="card" v-for="(service,index) in services" :key="index" data-aos="flip-up" data-aos-duration="2000">
             <div>
-                <img :src="`/svg/SVG_Organized/Our_Services/${service}.svg`" :alt="service" srcset="">
-                <h3>{{service}}</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero debitis ut consequatur.</p>
-                <a href="#">Read More</a>
+                <img :src="`/svg/SVG_Organized/Our_Services/${service.title}.svg`" :alt="service" srcset="">
+                <h3>{{service.title}}</h3>
+                <p>{{service.desc}}</p>
+                <a id="show-modal" @click="showModal = true, activeIndex=index" >Read More</a>
             </div>
         </div>
+
+              <!-- <button id="show-modal" @click="showModal = true">Show Modal</button> -->
+      <!-- use the modal component, pass in the prop -->
     </div>
+        <Modal v-if="showModal" @close="showModal = false" :activeOption="activeIndex" :service="services">
+        <!--
+      you can use custom content here to overwrite
+      default content
+    -->
+        <!-- <h3 slot="header">Hi</h3> -->
+      </Modal>
 </div>
 </template>
 
 <script>
+import Modal from '@/components/Modal.vue';
 export default {
 data() {
     return {
-        services:["Product Design", "Digital Marketing","Business Planning"]
+        services:[
+            {
+                title:"Product Design",
+                desc:"Lorem ipsum dolor sit amet, consectetur adipisicing e ut consequatur.",
+                summary:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, beatae recusandae. Reprehenderit quos fuga recusandae. Sunt voluptatibus eum commodi! Minima repellendus mollitia, quod perspiciatis praesentium repudiandae, ratidi soluta maiores omnis ullam est itaque nam ipsam cum quas, eius aut nisi officiis qui officia veniam. Dolorem, voluptates animi?"
+            },
+            {
+                title:"Digital Marketing",
+                desc:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero debitis ",
+                summary:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, beatae recusandae. Reprehenderit quos fuga recusandae. Sunt voluptatibus eum commodi! Minima repellendus mollitia, quod perspiciatis praesentium repudiandae, ratione facere sapiente modi soluta mallam est itaque nam ipsam cum quas, eius aut nisi officiis qui officia veniam. Dolorem, voluptates animi?"
+            },
+            {
+                title:"Business Planning",
+                desc:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero debitis ut consequatur.",
+                summary:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, beatae recusandae. Reprehenderit quos fuga recusandae. Sunt voluptatibus eum commodi! Minima repellendus mollitia, quod perspiciatis praesentium repudiandae, ratione facere sapiente modi soluta maiores omnis ullam est itaque nam ipsam cum quas, eius aut nisi officiis qui officia veniam. Dolorem, voluptates animi?"
+            },
+        ],
+        showModal:false,
+        activeIndex:Number,
     }
+},
+components: {
+    Modal,
 },
 }
 </script>
@@ -73,6 +105,7 @@ data() {
     a{
     color: $secondary-color;
     text-decoration: none;
+    cursor: pointer;
     }
 }
 .card:hover{
