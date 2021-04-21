@@ -3,7 +3,7 @@
     <h2>Our Services</h2>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, iusto!</p>
      <div class="parent">
-        <div class="card" v-for="(service,index) in services" :key="index" data-aos="flip-up" data-aos-duration="2000">
+        <div class="card" v-for="(service,index) in services" :key="index">
             <div>
                 <img :src="`/svg/SVG_Organized/Our_Services/${service.title}.svg`" :alt="service" srcset="">
                 <h3>{{service.title}}</h3>
@@ -11,16 +11,8 @@
                 <a id="show-modal" @click="showModal = true, activeIndex=index" >Read More</a>
             </div>
         </div>
-
-              <!-- <button id="show-modal" @click="showModal = true">Show Modal</button> -->
-      <!-- use the modal component, pass in the prop -->
     </div>
         <Modal v-if="showModal" @close="showModal = false" :activeOption="activeIndex" :service="services">
-        <!--
-      you can use custom content here to overwrite
-      default content
-    -->
-        <!-- <h3 slot="header">Hi</h3> -->
       </Modal>
 </div>
 </template>
