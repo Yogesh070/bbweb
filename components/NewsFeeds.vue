@@ -26,22 +26,22 @@ export default {
 data() {
     return {
         news:[{
-            thumbnail:"/svg/Brand Builder (Color).svg",
+            thumbnail:"./svg/Brand Builder (Color).svg",
             title:"Artificial Itelligence is Been common place in way",
             author:"Hari Thakur"
         },
         {
-            thumbnail:"/svg/Brand Builder (Color).svg",
+            thumbnail:"./svg/Brand Builder (Color).svg",
             title:"Artificial Itelligence is Been common place in way",
             author:"abc "
         },
         {
-            thumbnail:"/svg/Design.svg",
+            thumbnail:"./svg/Design.svg",
             title:"Artificial Itelligence is Been common place in way",
             author:"Hari Thakur"
         },
         {
-            thumbnail:"/svg/Discuss.svg",
+            thumbnail:"./svg/Discuss.svg",
             title:"Artificial Itelligence is Been common place in way",
             author:"Hari Thakur"
         },
