@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" data-aos="fade-right" data-aos-duration="2000">
       <div>
         <h2>Our Cool Organize <br/>Sketch Process</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, cupiditate!</p>
@@ -22,7 +22,8 @@ export default {
 .container{
     display: grid;
     grid-template-columns: 2fr 1fr;
-    padding: 50px;
+    /* padding: 4vw 7vw; */
+    padding: 8vw 7vw 7vw;
     background-color: #F7FAFF;
     margin-top: 50px;
 }
@@ -39,5 +40,13 @@ button{
     color: wheat;
     font-weight: 700;
 
+}
+@media (max-width:820px)  { 
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .container img{
+        display: none;
+    }
 }
 </style>
