@@ -1,9 +1,10 @@
 <template>
   <div>
     <Header/>
-    <Navbar/>
+    <!-- <Navbar/> -->
+    <Newnavbar/>
     <div class="hero-container">
-        <div>
+        <div data-aos="fade-right"  data-aos-duration="3000">
           <p>We Develop Creative Product</p>
           <h1>
             We Are Creative <br/>& Minimalist
@@ -15,6 +16,8 @@
     </div>
     <Services/>
     <Estimate/>
+    <!-- <Slider/> -->
+    
     <Portfolio/>
     <Process/>
     <NewsFeeds/>
@@ -32,6 +35,7 @@ import Footer from '@/components/Footer.vue';
 import Services from '@/components/Services.vue';
 import Estimate from '@/components/Estimate.vue';
 import Portfolio from '@/components/Portfolio.vue';
+// import Slider from '@/components/Slider.vue';
 export default {
 components: {
   Header,
@@ -41,7 +45,9 @@ components: {
   Footer,
   Services,
   Estimate,
-  Portfolio
+  Portfolio,
+  // Newnavbar,
+  // Slider
 },
 }
 </script>
@@ -53,10 +59,37 @@ components: {
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   align-items: center;
-  margin: 30px 0;
+  // margin: 30px 0;
+  margin: 4vw 7vw;
   h1{
     font-size: 5vw; 
     margin: 10px 0 30px 0;
   }
+}
+
+@media (max-width:820px)  { 
+    .hero-container{
+        grid-template-columns: 1fr  1fr;
+    }
+}
+@media (max-width:1024px){
+  .hero-container{
+    img{
+      max-width: 350px;
+      min-width: 200px
+    }
+  }
+}
+@media (max-width:540px)  { 
+    .hero-container{
+        grid-template-columns: 1fr;
+        // font-size: 72px;
+        h1{
+          font-size: xxx-large;
+        }
+        img{
+          display: none;
+        }
+    }
 }
 </style>
