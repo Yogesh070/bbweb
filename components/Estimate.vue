@@ -2,14 +2,14 @@
   <div class="container">
       <div class="estimate-container" data-aos="zoom-in" data-aos-duration="2000">
           <h1>
-              Estimate Your Project <br/> & Say Hi Here.
+              Grow Your Business<br/> With Us .
           </h1>
-          <button class="primary-button">
-              <!-- <img src="/svg/SVG_Organized/arrow.svg" alt=""> -->
+          <button class="primary-button btn-icon">
+              <img src="/svg/arrow-right-solid.svg" alt="" id="arrow">
           Get Started</button>
       </div>
       <h1>
-          Your Businesss Is Unique<br/> Need a Platform?
+          Reach More Customer<br/> With Brand Builder
       </h1>
   </div>
 </template>
@@ -21,12 +21,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.btn-icon{
+    display: flex;
+    align-items: center;
+}
+#arrow{
+    height: 20px;
+    margin-right: 10px;
+    color: white;
+}
 .container{
     background-image: url("/svg/Price estimation back design.svg");
     background-size: cover;
     background-repeat: no-repeat;
-    // background-position: center;
-    height: 70vh;
+    background-position: center;
+    height: 90vh;
 }
 .estimate-container{
     background-color: #F8F8F8;
@@ -46,11 +55,15 @@ export default {
 
     h1{
         padding: 20px;
+        font-weight: 100;
     }
 }
 .container>h1{
-    margin-top: 100px;
+    position: relative;
+    top: 100px;
+    /* margin-top: 100px; */
     text-align: center;
     color: white;
+    font-weight: 100;
 }
 </style>

@@ -1,11 +1,14 @@
 <template>
 <div class="container" id="portfolio">
+    <div class="flex-container">
+      <img src="/svg/OrangeCircle.svg" alt="circle-vector">
+    </div>
     <div class="content">
         <h2>Our Portfolio</h2>
         <p>Voice and Data Systems are crucial to the success or <br/>failure of most your businesses.</p>
     </div>
     <div class="slider-container" id="slider">
-        <div class="slider green" style="order:0" >1</div>
+        <div class="slider green" style="order:0" ></div>
         <div class="slider blue" style="order:1">2</div>
         <div class="slider grey" style="order:2">3</div>
 
@@ -35,6 +38,12 @@
 </script>
 
 <style lang="scss" scoped>
+
+.flex-container{
+  display: flex;
+  justify-content: center;
+
+}
 .container{
     display: flex;
     flex-direction: column;
@@ -62,11 +71,14 @@
         font-weight: 700;
          height: 200px; 
          height: 16vw;
+         cursor: pointer;
         // transition: 2s;
 }
-.green { background: #1abc9c; }
-.blue { background: #3498db; }
+  
+.green { background-image: url('/svg/behance.png'); background-size: cover;  position: relative; }
+.blue { background-image: url('/svg/fiver.png'); background-size: contain;}
 .grey { background: #34495e; }
+
 
 .button-group{ 
     button{
@@ -91,6 +103,10 @@
         height: 85px;
         width: 80vw;
     }
-
+    .flex-container{
+          img{
+      height: 80px;
+    }
+    }
 }
 </style>
