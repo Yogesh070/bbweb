@@ -2,8 +2,8 @@
   <div class="container" data-aos="fade-right" data-aos-duration="2000">
       <div>
         <h2>Our Cool Organize <br/>Plannning Process</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, cupiditate!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nemo asperiores neque repellendus accusamus et dolorum adipisci repellat expedita minus.</p>
+        <p>Voice and Data Systems  are crucial to the success or failure from your home work.</p>
+        <p>Voice and Data Systems are crucial to the success or failure of most businesses.Many companies provide laptops, cell phone, and Internet connections that in a require expensive maintenance by internal IT departments. </p>
         <button>Learn More</button>
       </div>
       <div>

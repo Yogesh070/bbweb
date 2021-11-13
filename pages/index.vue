@@ -12,7 +12,7 @@
           <button class="primary-button">Get Started</button>
           <button class="secondary-button">Intro Video</button>
       </div>
-        <img src="/svg/Man Floating.svg" alt="floating svg" class="float">
+        <img src="/svg/Man Floating.svg" alt="floating svg" class="float" srcset="/svg/Man Floating.svg /svg/Man Floating@2x.png 2x">
     </div>
     <img src="/svg/Half Hand.svg" alt="half-hand" id="half-hand">
     <Services/>

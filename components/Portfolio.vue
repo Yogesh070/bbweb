@@ -8,15 +8,23 @@
         <p>Voice and Data Systems are crucial to the success or <br/>failure of most your businesses.</p>
     </div>
     <div class="slider-container" id="slider">
-        <div class="slider green" style="order:0" ></div>
-        <div class="slider blue" style="order:1">2</div>
-        <div class="slider grey" style="order:2">3</div>
+        <a href="https://www.behance.net/brandbuilder2021" target="_blank">
+            <div class="slider behance" style="order:0" >
+                <div class="slider-content"><h1>BEHANCE</h1></div>
+            </div>
+        </a>
+        <a href="https://www.fiverr.com/brandbuildern" target="_blank">
+            <div class="slider fiver" style="order:1">
+                <div class="slider-content"><h1>FIVERR</h1></div>
+            </div>
+        </a>
+        <div class="slider grey" style="order:2"><div class="slider-content"><h1>FIVERR</h1></div></div>
 
     </div>
-    <div class="button-group">
+    <!-- <div class="button-group">
         <button @click="shift(-1)" class="prev-button">&laquo;</button>
         <button @click="shift(1)" class="next-button">&raquo;</button>
-    </div>
+    </div> -->
 </div>
 
 </template>
@@ -38,6 +46,23 @@
 </script>
 
 <style lang="scss" scoped>
+.slider-content{
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.63);
+}
+.slider-content:hover{
+    opacity: 1;
+    transition: all 300ms ease-in-out;
+    h1{
+        -webkit-text-stroke: 1px white;
+        color: transparent !important;
+        letter-spacing: 5px;
+    }
+}
 
 .flex-container{
   display: flex;
@@ -75,8 +100,8 @@
         // transition: 2s;
 }
   
-.green { background-image: url('/svg/behance.png'); background-size: cover;  position: relative; }
-.blue { background-image: url('/svg/fiver.png'); background-size: contain;}
+.behance { background-image: url('/svg/behance.png'); background-size: cover;}
+.fiver { background-image: url('/svg/fiver.png'); background-size: contain;}
 .grey { background: #34495e; }
 
 

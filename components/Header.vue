@@ -1,10 +1,10 @@
 <template>
   <div class="header">
     <div>
-      <img src="/svg/Email.svg" alt="">
-      <i>mail@brandbuilder.com.np </i>
-      <img src="/svg/Phone.svg" alt="">
-      <i> 98506636365</i>
+      <img src="/svg/Email.svg" alt="email-icon">
+      <a href="mailto:mail@brandbuilder.com.np">mail@brandbuilder.com.np</a>
+      <img src="/svg/Phone.svg" alt="phone-icon">
+      <a href="tel:+9779816162091">9816162091</a>
     </div>
       
       <div class="socials">
@@ -18,7 +18,7 @@
       </div>
       <div class="call-card">
         <span>Get a Call</span>
-        <h5>9802821038</h5>
+        <h5>9816162091</h5>
       </div>
   </div>
 </template>
@@ -36,7 +36,7 @@ export default {
             {
                 icon:"Instagram.svg",
                 name:"instagram",
-                link:"http://www.instagram.com"
+                link:"https://www.instagram.com/brandbuilder.nepal"
             },
             {
                 icon:"twitter-1.svg",
@@ -58,6 +58,13 @@ export default {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     position: relative;
+    a{
+      text-decoration: none;
+      color: #616368;
+    }
+    .phno{
+      color: #616368;
+    }
 }
 .call-card{
     position: absolute;

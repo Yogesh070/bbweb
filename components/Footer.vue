@@ -52,8 +52,8 @@
 export default {
 data(){
     return{
-        services:["Product Stratergy","Product Engineering","Artitecture","UX/UI Desing" ,"App Development"],
-        contacts:["mail@brandbuilder.com","+9805821350","Panthi galli, Chipledhunga"],
+        services:["SEO","Product Engineering","Artitecture","UX/UI Desing" ,"App Development","Video Editing","Photo Editing","Ordering System"],
+        contacts:["mail@brandbuilder.com","+9802821038","Panthi galli, Chipledhunga","brandbuilder.com.np"],
         socials:[
             {
                 icon:"Fb.svg",
@@ -85,7 +85,12 @@ data(){
 }
 }
 </script>
-<style scoped>
+<style lang="scss" scoped>
+.services{
+    li{
+      text-transform: uppercase;  
+    }
+}
 .container{
     background-image: url("/svg/SVG_Organized/Footer Background.svg");
     background-position: center;

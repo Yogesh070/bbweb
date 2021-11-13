@@ -50,9 +50,10 @@ components:{
 .line{
     position: absolute;
     height: 2px;
-    width: 100%;
+    width: 85%;
     background: #D5E1FF;
     top: 32px;
+    left: 90px;
 }
 .button-group{
     display: flex;
@@ -107,6 +108,9 @@ components:{
     align-items: center;
     min-height: 66px;
     z-index: 100;
+    img{
+        height: 18px;
+    }
 }
 .activeImg{
   filter: invert(43%) sepia(97%) saturate(2339%) hue-rotate(5deg);
@@ -134,13 +138,16 @@ img{
         display: none;
     }
     .tab-button{
-        min-height: 57px;
-        padding: 15px;
+        min-height: 48px;
+        padding: 10px;
+        /* min-height: 57px;
+        padding: 15px; */
     }
     .button-group{
         position: relative;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        grid-template-columns: repeat(6,1fr);
         justify-items: center;
         grid-row-gap: 15px;
     }
