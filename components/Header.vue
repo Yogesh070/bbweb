@@ -31,7 +31,7 @@ export default {
             {
                 icon:"fb.svg",
                 name:"facebook",
-                link:"http://www.facebook.com"
+                link:"https://www.facebook.com/brandbuildernepal"
             },
             {
                 icon:"Instagram.svg",
@@ -53,7 +53,7 @@ export default {
 <style lang="scss"scoped>
 .header{
     padding: 10px 0;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #616368;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;

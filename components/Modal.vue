@@ -3,7 +3,7 @@
       <transition name="modal">
         <div class="modal-mask">
           <div class="modal-wrapper">
-            <div class="modal-container">
+            <div class="modal-container scrollbar">
 
               <div class="modal-header">
                 <slot name="header">
@@ -74,9 +74,10 @@ props: {
   border-radius: 2px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
   transition: all 0.4s ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  overflow: scroll;
 }
 
 .modal-header h3 {
@@ -100,6 +101,7 @@ props: {
 .modal-leave-active .modal-container {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+  transition: all 1s ease-in-out;
 }
 
 </style>

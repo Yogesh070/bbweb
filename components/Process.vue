@@ -50,10 +50,11 @@ components:{
 .line{
     position: absolute;
     height: 2px;
-    width: 85%;
+    /* width: 85%; */
+    width: calc(100% - 17vw);
     background: #D5E1FF;
     top: 32px;
-    left: 90px;
+    left: 9%;
 }
 .button-group{
     display: flex;

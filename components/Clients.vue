@@ -27,6 +27,7 @@ export default {
         grid-template-columns: repeat(5,1fr);
         align-items: center;
         justify-items: center;
+        margin-bottom: 0;
         img{
             align-self: center;
             height: 200px;

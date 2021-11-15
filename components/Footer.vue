@@ -16,17 +16,23 @@
       </div>
       <div class="bottom-box">
             <div class="services">
-            <h2>Services</h2>
-            <ul>
-                <li v-for="(service,index) in services " :key="index">{{service}}</li>
-            </ul>
-                </div>
+                <h2>Services</h2>
+                <ul>
+                    <li v-for="(service,index) in services " :key="index">{{service}}</li>
+                </ul>
+            </div>
+            <div class="services">
+                <h2><br></h2>
+                <ul>
+                    <li v-for="(service,index) in services2 " :key="index">{{service}}</li>
+                </ul>
+            </div>
                 <div class="contacts">
                     <h2>Contact</h2>
                     <ul>
                         <li v-for="(contact,index) in contacts" :key="index">{{contact}}</li>
                     </ul>
-            </div>
+                </div>
             <div class="news-feeds">
                 <h2>News Feeds</h2>
                 <ul>
@@ -41,7 +47,7 @@
               <p>© 2020  All Rights Reserved</p>
           </div>
           <div class="privacy">
-              <p>Privacy</p>
+              <p style="margin-right:1 5px">Privacy</p>
               <p>Terms and Condition</p>
           </div>
        </div>
@@ -52,23 +58,24 @@
 export default {
 data(){
     return{
-        services:["SEO","Product Engineering","Artitecture","UX/UI Desing" ,"App Development","Video Editing","Photo Editing","Ordering System"],
+        services:["SEO","UX/UI Design","Graphics Design","Digital Marketing" ,"Mobile & Web App Development"],
+        services2:["Video Editing","Photo Editing","Business it consultant","Ordering System(Online)","Point of sale(Online/offline)"],
         contacts:["mail@brandbuilder.com","+9802821038","Panthi galli, Chipledhunga","brandbuilder.com.np"],
         socials:[
             {
                 icon:"Fb.svg",
                 name:"facebook",
-                link:"http://www.facebook.com"
+                link:"https://www.facebook.com/brandbuildernepal"
             },
             {
-                icon:"Twitter.svg",
+                icon:"linkedin.svg",
                 name:"twitter",
-                link:"http://www.twitter.com"
+                link:"https://www.linkedin.com/company/brand-builder-nepal"
             },
             {
                 icon:"Insta.svg",
                 name:"instagram",
-                link:"http://www.instagram.com"
+                link:"https://www.instagram.com/brandbuilder.nepal"
             },
         ],
         navs:[
@@ -127,7 +134,7 @@ a{
 }
 .bottom-box{
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
     justify-items: center;
     /* margin: 50px 0; */
     margin: 4vw 7vw;

@@ -18,8 +18,9 @@
                 <div class="slider-content"><h1>FIVERR</h1></div>
             </div>
         </a>
-        <div class="slider grey" style="order:2"><div class="slider-content"><h1>FIVERR</h1></div></div>
-
+        <a href="https://photos.google.com/share/AF1QipPfXGer1vw8FAACgkVRkHI51gcEiuxE5mt2DiIUNgUaoHGS8Diqt7xqKeuFqnWUrA?key=VVN6VjJWVG1qMWJoSmF5YS1zdTZSMzEzVXJyeG9n" target="_blank">
+            <div class="slider drive" style="order:2"><div class="slider-content"><h1>Sample Designs</h1></div></div>
+        </a>
     </div>
     <!-- <div class="button-group">
         <button @click="shift(-1)" class="prev-button">&laquo;</button>
@@ -73,8 +74,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 4vw 7vw;
+    margin: 0 7vw;
     text-align: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 .content{
     margin: 30px 0;
@@ -102,7 +105,7 @@
   
 .behance { background-image: url('/svg/behance.png'); background-size: cover;}
 .fiver { background-image: url('/svg/fiver.png'); background-size: contain;}
-.grey { background: #34495e; }
+.drive { background-image: url('/svg/drive.png'); background-size: cover;}
 
 
 .button-group{ 

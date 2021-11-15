@@ -111,7 +111,7 @@ components: {
 }
 
 .card:hover{
-    transform: translateY(30px);
+    transform: translateY(10px);
     transition: transform 1s ease ;
     border-bottom: 4px solid $base-color;
 }
