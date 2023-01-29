@@ -1,9 +1,9 @@
 <template>
   <div class="header">
     <div>
-      <img src="/svg/Email.svg" alt="email-icon">
+      <img src="svg/Email.svg" alt="email-icon">
       <a href="mailto:mail@brandbuilder.com.np">mail@brandbuilder.com.np</a>
-      <img src="/svg/Phone.svg" alt="phone-icon">
+      <img src="svg/Phone.svg" alt="phone-icon">
       <a href="tel:+9779816162091">9816162091</a>
     </div>
       
@@ -11,7 +11,7 @@
         <ul>
           <li v-for="social in socials" :key="social.name">
           <a :href="social.link" target="_blank">
-            <img :src="`/svg/${social.icon}`" :alt="social.name">
+            <img :src="`svg/${social.icon}`" :alt="social.name">
           </a>
         </li>
         </ul>

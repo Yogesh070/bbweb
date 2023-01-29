@@ -9,11 +9,11 @@ export default {
     data(){
         return{
             clients:[
-                {image:['/clients/aestheticMakeupLogo.png','/clients/aestheticMakeupLogo@2x.png']},
-                {image:['/clients/bigbellLogo.png','/clients/bigbellLogo@2x.png']},
-                {image:['/clients/veda.png','/clients/veda@2x.png']},
-                {image:['/clients/axon.png','/clients/axon@2x.png']},
-                {image:['/clients/soch_logo_new.png','/clients/soch_logo_new@2x.png']},
+                {image:['clients/aestheticMakeupLogo.png','clients/aestheticMakeupLogo@2x.png']},
+                {image:['clients/bigbellLogo.png','clients/bigbellLogo@2x.png']},
+                {image:['clients/veda.png','clients/veda@2x.png']},
+                {image:['clients/axon.png','clients/axon@2x.png']},
+                {image:['clients/soch_logo_new.png','clients/soch_logo_new@2x.png']},
             ]
         }
     }

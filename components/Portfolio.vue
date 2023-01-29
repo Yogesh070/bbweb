@@ -1,7 +1,7 @@
 <template>
 <div class="container" id="portfolio">
     <div class="flex-container">
-      <img src="/svg/OrangeCircle.svg" alt="circle-vector">
+      <img src="svg/OrangeCircle.svg" alt="circle-vector">
     </div>
     <div class="content">
         <h2>Our Portfolio</h2>
@@ -103,9 +103,9 @@
         // transition: 2s;
 }
   
-.behance { background-image: url('/svg/behance.png'); background-size: cover;}
-.fiver { background-image: url('/svg/fiver.png'); background-size: contain;}
-.drive { background-image: url('/svg/drive.png'); background-size: cover;}
+.behance { background-image: url('svg/behance.png'); background-size: cover;}
+.fiver { background-image: url('svg/fiver.png'); background-size: contain;}
+.drive { background-image: url('svg/drive.png'); background-size: cover;}
 
 
 .button-group{ 

@@ -8,7 +8,7 @@
         </button> -->
         <div class="btn" v-for="(tab,index) in process" :key="index"  v-bind:class="['tab-button', { active: currentTab === tab }]"
         v-on:click="currentTab = tab">
-            <img :src="`/svg/SVG_Organized/Process/${tab}.svg`" :alt="tab" v-bind:class="{activeImg: currentTab === tab}"> 
+            <img :src="`svg/SVG_Organized/Process/${tab}.svg`" :alt="tab" v-bind:class="{activeImg: currentTab === tab}"> 
             <p class="btn-text">{{tab}}</p>
         </div>
         </div>

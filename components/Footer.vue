@@ -2,13 +2,13 @@
 <div class="container" id="contact">
       <div class="top-bar">
         
-            <img src="/svg/Brand Builder (White).svg" alt="logo" srcset="" id="logo">
+            <img src="svg/Brand Builder (White).svg" alt="logo" srcset="" id="logo">
         
         <div class="socials">
               <ul>
                 <li v-for="social in socials" :key="social.name">
                     <a :href="social.link" target="_blank">
-                        <img :src="`/svg/SVG_Organized/Social_Media/${social.icon}`" :alt="social.name">
+                        <img :src="`svg/SVG_Organized/Social_Media/${social.icon}`" :alt="social.name">
                     </a>
                 </li>
               </ul>
@@ -99,7 +99,7 @@ data(){
     }
 }
 .container{
-    background-image: url("/svg/SVG_Organized/Footer Background.svg");
+    background-image: url("svg/SVG_Organized/Footer Background.svg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

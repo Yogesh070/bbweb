@@ -1,14 +1,14 @@
 <template>
 <div class="container" id="services">
     <div class="flex-container">
-      <img src="/svg/OrangeCircle.svg" alt="circle-vector">
+      <img src="svg/OrangeCircle.svg" alt="circle-vector">
     </div>
     <h2>Our Services</h2>
     <p>Voice and Data Systems are crucial to the success or failure of most businesses.</p>
      <div class="parent">
         <div class="card" v-for="(service,index) in services" :key="index" id="show-modal" @click="showModal = true, activeIndex=index" :class="'card-'+index">
             <div>
-                <img :src="`/svg/SVG_Organized/Our_Services/${service.title}.svg`" :alt="service" srcset="">
+                <img :src="`svg/SVG_Organized/Our_Services/${service.title}.svg`" :alt="service" srcset="">
                 <h3>{{service.title}}</h3>
                 <p><span v-html="service.desc.split('|').join('<br>')"></span></p>
 

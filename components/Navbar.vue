@@ -1,16 +1,15 @@
 <template>
   <div class="navbar">
       <div class="logo">
-          <img src="/svg/Brand Builder (Color).svg" alt="logo" srcset="">
+          <img src="svg/Brand Builder (Color).svg" alt="logo" srcset="">
       </div>
       <div class="navitems">
         <ul>
             <li v-for="nav in navs" :key="nav.name" v-bind:class="{active:currentNav===nav.name}" v-on:click="currentNav = nav.name">
                 <!-- <nuxt-link :to="`/${nav.link}`">{{nav.name}}</nuxt-link> -->
-                <a :href="`#${nav}`">{{nav}</a>
-                
+                <a :href="`#${nav}`">{{nav}}</a>
                 </li>
-                        <div class="activebar">
+                    <div class="activebar">
             </div>
         </ul>
       </div>

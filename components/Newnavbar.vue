@@ -7,7 +7,7 @@
         <span></span>
         <span></span>
       </div>
-      <img src="/svg/Brand Builder (Color).svg" alt="logo">
+      <img src="svg/Brand Builder (Color).svg" alt="logo">
       <nav id="menu">
         <li><a href="#">Home</a></li>
         <li><a href="#about">About</a></li>
