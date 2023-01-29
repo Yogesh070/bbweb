@@ -45,4 +45,7 @@ export default {
   },
   target: 'static',
   devServerHandlers: [],
+  static: {
+    prefix: false
+  }
 }
