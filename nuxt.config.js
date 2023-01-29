@@ -44,8 +44,5 @@ export default {
     ]
   },
   target: 'static',
-  router:{
-    base:"/bbweb/"
-  },
   devServerHandlers: [],
 }
