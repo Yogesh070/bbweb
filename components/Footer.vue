@@ -99,7 +99,7 @@ data(){
     }
 }
 .container{
-    background-image: url("svg/SVG_Organized/Footer Background.svg");
+    background-image: url("/svg/SVG_Organized/Footer Background.svg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

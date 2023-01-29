@@ -31,7 +31,7 @@ export default {
     color: white;
 }
 .container{
-    background-image: url("svg/Price estimation back design.svg");
+    background-image: url("/svg/Price estimation back design.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -39,7 +39,7 @@ export default {
 }
 .estimate-container{
     background-color: #F8F8F8;
-    background-image: url("svg/Currencies.svg");
+    background-image: url("/svg/Currencies.svg");
     background-size: contain;
     background-position: center;
     display: flex;

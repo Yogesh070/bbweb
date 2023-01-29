@@ -103,9 +103,9 @@
         // transition: 2s;
 }
   
-.behance { background-image: url('svg/behance.png'); background-size: cover;}
-.fiver { background-image: url('svg/fiver.png'); background-size: contain;}
-.drive { background-image: url('svg/drive.png'); background-size: cover;}
+.behance { background-image: url('/svg/behance.png'); background-size: cover;}
+.fiver { background-image: url('/svg/fiver.png'); background-size: contain;}
+.drive { background-image: url('/svg/drive.png'); background-size: cover;}
 
 
 .button-group{ 
