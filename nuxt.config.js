@@ -34,14 +34,18 @@ export default {
   modules: [
     '@nuxtjs/style-resources',
   ],
-  
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
   styleResources: {
     scss: [
-        '~/assets/scss/_variables.scss',
+      '~/assets/scss/_variables.scss',
     ]
-}
-
+  },
+  target: 'static',
+  router:{
+    base:"/bbweb/"
+  },
+  devServerHandlers: [],
 }
